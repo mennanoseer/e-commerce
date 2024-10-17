@@ -1,66 +1,61 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# e-commerce
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+An e-commerce platform built using Laravel, MySQL, and Bootstrap. This project provides an admin interface for managing categories, products, and users, as well as a user interface for customers to browse and purchase products.
 
-## About Laravel
+## Project Status
+⚠️ **Note**: This project is still in progress, and some features are incomplete, such as the shop section for the user interface.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Features
+### Admin Interface:
+- Category Management: Create, edit, delete, and list categories.
+- Product Management: Add, edit, delete, and display products.
+- User Management: Manage user accounts.
+- Authentication: Admin and user login and registration.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### User Interface:
+- Home Page: View product categories.
+- Categories: Browse available categories.
+- Shop: Explore products (in progress).
+- Authentication: User login and registration.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## File Structure
+### Controllers:
+- **CategoryController**: Manages categories for the admin panel.
+- **ProductController**: Manages products for the admin panel.
+- **UserController**: Handles user information.
+- **HomeController**: Handles the homepage for users.
 
-## Learning Laravel
+### Middleware:
+- **AdminMiddleware**: Restricts access to admin pages.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Models:
+- **Category**: Defines the structure for category data.
+- **Product**: Defines the structure for product data.
+- **User**: Manages user-related data.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### Database:
+- **Migrations**: Set up tables for categories, products, and users.
+- **Factories**: Seed the database with sample data for testing.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Views (Blade Templates):
+#### Admin
+- **Dashboard**: Overview of the admin panel.
+- **Categories**: Create, edit, and list categories.
+- **Products**: Create, edit, list, and show product details.
+  
+#### User
+- **Categories**: View available categories.
+- **Shop**: View and explore products (in progress).
+- **Home**: Main homepage for users.
+- **Authentication**: Login and registration pages for users.
 
-## Laravel Sponsors
+## Technologies Used:
+- **Laravel**: PHP framework for building the backend.
+- **MySQL**: Database management system (using phpMyAdmin for management).
+- **Bootstrap**: CSS framework for styling.
+- **Blade**: Laravel templating engine for views.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Setup and Installation:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/mennanoseer/e-commerce.git
